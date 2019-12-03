@@ -98,7 +98,6 @@ reward.scaleY = .45;
 reward.onPlayerCollision = function() {
 game.changeIntegrity(-20);
 game.increaseScore(2800);
-reward.fadeOut();
 };
 console.log('The enemy has hit Halle');
 }
