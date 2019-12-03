@@ -78,7 +78,7 @@ game.changeIntegrity(-700);
 };
 enemy.onProjectileCollision = function(){
     enemy.fadeOut();
-    game.increaseScore(300000000);
+    game.increaseScore(4000);
 };
 console.log('The enemy has hit Halle');
 }
@@ -98,7 +98,7 @@ reward.scaleY = .45;
 reward.onPlayerCollision = function() {
 game.changeIntegrity(-20);
 game.increaseScore(2800);
-
+reward.fadeOut();
 };
 console.log('The enemy has hit Halle');
 }
